@@ -67,7 +67,3 @@ The analysis was carried out using the `turing_data_analytics.subscriptions` tab
 ## Conclusion
 
 This cohort-based weekly retention analysis provides faster and more actionable insights compared to monthly reporting. By identifying churn patterns early, stakeholders can respond proactively with targeted retention strategies, particularly around high-risk periods such as festive seasons.
-
-
-Just tell me 👍
-
