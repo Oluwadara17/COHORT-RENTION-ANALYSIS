@@ -1,22 +1,73 @@
 ## Title: COHORT, RENTION ANALYSIS
 # Author: Oluwadara Olamide 
+
+## Project Title
+Weekly Subscription Retention & Churn Analysis (Cohort-Based)
+
 ## Task Description
-I got a follow up task from your product manager to give stats on how subscriptions churn looks like from a weekly retention standpoint. PM argues that to view retention numbers on a monthly basis takes too long and important insights from data might be missed out.
-You remember learning previously that cohorts analysis can be really helpful in such cases. You should provide weekly subscriptions data that shows how many subscribers started their subscription in a particular week and how many remain active in the following 6 weeks. Your end result should show weekly retention cohorts for each week of data available in the dataset and their retention from week 0 to week 6. Assume that you are doing this analysis on 2021-02-07.
 
-You should use [turing_data_analytics.subscriptions](https://console.cloud.google.com/bigquery?authuser=3&project=tc-da-1&page=table&ws=!1m19!1m3!8m2!1s756497109418!2s1b8fa7cb3d73401f81fea1591fa615a7!1m4!4m3!1sjustasproject-176208!2sturing_college!3sraw_events_test!1m4!4m3!1sjustasproject-176208!2sturing_college!3ssubscriptions!1m4!4m3!1stc-da-1!2sturing_data_analytics!3ssubscriptions&d=turing_data_analytics&p=tc-da-1&t=subscriptions) table to answer this question. 
-Please write a SQL that would extract data from the BigQuery, create effective visualizations, by using a tool that you are familiar with such as Google Spreadsheets, Tableau, Looker Studio, or any other suitable data visualization tool, and briefly comment your findings.
-## Evaluation criteria for a Graded project submission
-- SQL, correct columns identified to make analysis.
-- SQL, correct logic created to make analysis.
-- SQL, code formatted well and is readable.
-- Visualisation is clear and communicates the message/answer.
-- Analysis, findings and main points clearly structured.
-- Analytical approach to the problem
-**Sample questions**:
+I received a follow-up task from the Product Manager to analyse how subscription churn behaves from a **weekly retention perspective**. The Product Manager highlighted that monthly retention views can be slow to reveal behavioural patterns and may result in missing critical insights.
+To address this, I applied **cohort analysis**, which allows user retention and churn to be tracked over time based on when subscribers started their subscriptions.
 
-- What is the relationship between churn and retention rate?
-- What is negative churn?
-- What is user retention?
-- What are user retention cohorts?
- 
+The objective of this task was to:
+* Identify how many users started their subscription in a given week.
+* Track how many of those users remained active over the following **six weeks**.
+* Present weekly retention cohorts from **Week 0 to Week 6**.
+* Perform the analysis as of **7 February 2021**.
+
+The analysis was carried out using the `turing_data_analytics.subscriptions` table in **Google BigQuery**, with further analysis and visualisation completed in **Microsoft Excel**.
+
+## Tools Used
+
+* **Google BigQuery** – for data extraction and transformation
+* **Microsoft Excel** – for cohort analysis and visualisation
+
+## Project Files
+
+* **`cohort.sql`**
+  Contains the SQL query used to extract and prepare weekly cohort retention data from BigQuery.
+
+* **`COHORT, RETENTION ANALYSIS.xlsx`**
+  Excel workbook containing the analysis and visual outputs. The file includes three sheets:
+
+  1. **Sheet 2** – Cleaned and structured cohort data extracted from BigQuery
+  2. **Cohort Analysis** – Weekly retention cohort table (Week 0 to Week 6)
+  3. **Visualisations** – Charts illustrating retention and churn trends over time
+
+## Analytical Approach
+
+1. Identified each subscriber’s **cohort week** based on their subscription start date.
+2. Calculated weekly retention by tracking whether subscribers remained active in subsequent weeks.
+3. Normalised retention values to allow comparison across cohorts.
+4. Visualised cohort behaviour to identify churn and retention patterns clearly.
+
+## Key Findings
+**Insights**
+
+1. The churn rate experienced a **significant spike during the festive period**, followed by a noticeable decline in the weeks afterwards.
+2. The **20 December 2020 cohort** recorded the **lowest churn rate**, indicating strong early retention among users who subscribed during that period.
+
+## Key Concepts Addressed
+
+* **User Retention**
+  The ability of a business to keep users active over a defined period of time.
+
+* **Churn Rate**
+  The percentage of users who discontinue their subscription during a specific time window.
+
+* **Relationship Between Retention and Churn**
+  Retention and churn are inversely related — as retention increases, churn decreases.
+
+* **Negative Churn**
+  Occurs when revenue gained from existing users (e.g. upgrades or reactivations) exceeds revenue lost from churned users.
+
+* **User Retention Cohorts**
+  Groups of users segmented by a shared characteristic, in this case, the week they started their subscription, enabling behavioural comparison over time.
+
+## Conclusion
+
+This cohort-based weekly retention analysis provides faster and more actionable insights compared to monthly reporting. By identifying churn patterns early, stakeholders can respond proactively with targeted retention strategies, particularly around high-risk periods such as festive seasons.
+
+
+Just tell me 👍
+
