@@ -1,4 +1,4 @@
-## Title: COHORT, RENTION ANALYSIS
+## Title: COHORT, RETENTION ANALYSIS
 # Author: Oluwadara Olamide 
 
 ## Project Title
@@ -27,7 +27,7 @@ The analysis was carried out using the `turing_data_analytics.subscriptions` tab
 * **`cohort.sql`**
   Contains the SQL query used to extract and prepare weekly cohort retention data from BigQuery.
 
-* **`COHORT, RETENTION ANALYSIS.xlsx`**
+* **` COHORT, RETENTION ANALYSIS.xlsx`**
   Excel workbook containing the analysis and visual outputs. The file includes three sheets:
 
   1. **Sheet 2** – Cleaned and structured cohort data extracted from BigQuery
